@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&display=swap');
+
+
+
+
+nav {
+   
+    
+   width: 100vw;
+   height: 15vw;
+   background-color: #34a0a4;
+background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
+
+    
+
+
+    & ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Dorsa', sans-serif;
+        padding-top: 2%;
+       
+    }
+
+    & li {
+        list-style-type: none;
+       
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-size: 3rem;
+        
+    }
+
+    .logo{
+        height: 15%;
+        width: 15%;
+        border: solid 1px black;
+    }
+
+
+
+}
