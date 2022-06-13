@@ -1,1 +1,7 @@
-<p>zapascard works!</p>
+<figure class="zapascard">
+    <h2>{{zapa.marca}}</h2>
+    <h3>{{zapa.modelo}}</h3>
+    <img src="{{zapa.imagen}}" alt="{{zapa.modelo}}">
+    <p>Precio: {{zapa.precio}}</p>
+    <button (click)="editzapa(zapa)"></button>
+</figure>

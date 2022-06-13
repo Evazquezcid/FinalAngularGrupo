@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { ServicesService } from './../../../../services/services.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-zapascard',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./zapascard.component.scss']
 })
 export class ZapascardComponent implements OnInit {
-
-  constructor() { }
+ @Input () public zapa!: any;
+  constructor(private servicesService:ServicesService, private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  public editzapa (zapa: any) {
+    this.servicesService.editItem(zapa);
+    this.router.navigate(["/gestion"])
   }
 
 }

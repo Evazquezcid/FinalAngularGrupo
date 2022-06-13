@@ -1,1 +1,26 @@
-<p>gestion works!</p>
+<section class="gestion">
+    <h2>Gestion</h2>
+    <form [formGroup]="zapaForm" (ngSubmit)="onSubmit()">
+      <label for="marca">Marca</label>
+      <input type="text" id="marca" formControlName="marca" placeholder="marca" />
+      <label for="imagen">imagen</label>
+      <input type="text" id="imagen" formControlName="imagen" placeholder="foto" />
+      <label for="modelo">modelo</label>
+      <input
+        type="text"
+        id="modelo"
+        formControlName="modelo"
+        placeholder="modelo"
+      />
+      <label for="precio">precio</label>
+      <input
+        type="text"
+        id="precio"
+        formControlName="precio"
+        placeholder="precio"
+      />
+      <button type="submit">Submit</button>
+      <button (click)="delete()">Delete Zapa</button>
+    </form>
+  </section>
+  
