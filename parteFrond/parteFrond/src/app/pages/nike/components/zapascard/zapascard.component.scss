@@ -1,24 +1,36 @@
+.zapascard {
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-figure{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    border: solid 1px black;
-    img{
-        width: 30vh;
-    
-        object-fit: cover;
+  padding: 10px;
+  h2 {
+    background-color: black;
+    color: white;
+  }
+  h3 {
+    padding: 10px;
+  }
+
+  img {
+    padding-top: 10px;
+    width:20vw;
+    height: 200px;
+
+    object-fit: cover;
+    &:hover{
+        transform: scale(1.2);
     }
-    button{
-        
-        width: 120px;
-        height: 60px;
-    }
-
-button {
-
-width: 20%;
-height: 30px;
+  }
 
 }
-}
+
+
+  button {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+  }
+
+
