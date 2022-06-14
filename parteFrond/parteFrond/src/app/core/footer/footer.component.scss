@@ -1,70 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Gaegu:wght@300&family=Give+You+Glory&family=Syncopate&display=swap');
+
+
 footer {
+
+  width: 100%;
   background-color: #34a0a4;
   background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
-
-  margin-top: 5px;
-  padding-bottom: 7px;
-  position: fixed;
-  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
+  position: relative;
+  
+  font-family: 'Gaegu', cursive;
   
 
-  a { color: black;
+  a {
+    color: black;
     font-size: 14px;
     text-decoration: underline;
     margin-bottom: 1vh;
+    margin-top: 0,9vh;
     display: flex;
     text-align: center;
-    justify-content:space-around;
-    
-    
+    justify-content: space-around;
+    background-color: #34a0a4;
+    background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
   }
 
   .redes {
     display: flex;
     flex-direction: row;
-    gap: 3%;
     justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 38vw;
     background-color: #34a0a4;
     background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
-    padding-top: 15px;
-   
-  
+    
 
     .logo {
-      width: 4vh;
+      width: 2vh;
       gap: 1%;
       display: flex;
       text-align: center;
       justify-content: center;
-      border-radius: 20px;
+      border-radius: 17px;
       
-     
+      
     }
   }
 
-  font-family: "suisse","HelveticaNeue","Helvetica","Arial",sans-serif;
+  p {
+    background-color: #34a0a4;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
+    margin-top: 5px;
+  }
+
+  img{
+
+    width: 8vh;
+      gap: 1%;
+      display: flex;
+      text-align: start;
+      justify-content: start;
+      border-radius: 17px;
+      padding-left: 10%;
+      
 
 
 
- 
-}
 
+  }
 
-
-p {
-  background-color: #34a0a4;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  font-size: 12px;
-  background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
-  margin-top:  5px;
- 
+  
 }
 
 @media (max-width: 600px) {
-    
+
+  .redes {
+    display: flex;
+    flex-direction: row
+  }
+
+  footer{
+    min-height: fit-content;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+  
+   }
+
+   a{
+
+    font-size: 0.6rem;
+    font-family: 'Gaegu', cursive;
+   }
+
 }
 
- 
