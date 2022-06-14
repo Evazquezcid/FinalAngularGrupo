@@ -1,9 +1,11 @@
 <h2>Nike</h2>
 <p>
     La diosa griega de la victoria da nombre a la marca deportiva más importante del mundo: Nike, fundada en 1964 por Phil Knight y Bill Bowerman. Algunas de sus siluetas, como la Air Force 1, son consideradas iconos mundiales del deporte y de la moda.</p>
+    <div class="buscador">
+        <input type ="text" #input (keyup) = "filtrarZapa(input.value)" placeholder="Busca tu modelo"/>
+        </div>
 <section class="zapas">
- 
     <article>
-        <app-zapascard *ngFor="let zapa of zapas"[zapa] = "zapa"></app-zapascard>
+        <app-zapascard *ngFor="let zapa of zapasFiltradas" [zapa] = "zapa"></app-zapascard>
     </article>
 </section>
