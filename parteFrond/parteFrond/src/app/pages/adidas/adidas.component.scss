@@ -1,15 +1,22 @@
 
 h2{
+    font-size: 40px;
     text-align: center;
     padding: 40px;
-    font-family: 'Dorsa', sans-serif;
+    font-family: "suisse","HelveticaNeue","Helvetica","Arial",sans-serif;
 
 }
 p{
-    margin-left: 100px;
+    @media (max-width: 600px) {
+        margin-left: 60px;
+        margin-right: 60px;
+            
+    }
+    font-size: 20px;
+    margin-left: 200px;
     margin-right: 150px;
     padding-bottom: 60px;
-    font-family: 'Dorsa', sans-serif;
+    font-family: "suisse","HelveticaNeue","Helvetica","Arial",sans-serif;
 
     
 }

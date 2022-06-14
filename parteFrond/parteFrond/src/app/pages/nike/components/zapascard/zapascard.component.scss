@@ -1,4 +1,6 @@
 .zapascard {
+    
+    
   width: 300px;
   height: 350px;
   text-align: center;
@@ -11,18 +13,24 @@
   }
   h3 {
     padding: 10px;
+    font-family: "suisse","HelveticaNeue","Helvetica","Arial",sans-serif;
+
   }
 
   img {
+    @media (max-width: 600px) {
+        width: 280px;
+        height: 200px;
+    }
     padding-top: 10px;
     width:20vw;
     height: 200px;
-
     object-fit: cover;
     &:hover{
         transform: scale(1.2);
     }
   }
+  
 
   button {
     margin-top: 10px;
