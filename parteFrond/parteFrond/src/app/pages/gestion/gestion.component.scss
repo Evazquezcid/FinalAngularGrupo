@@ -1,0 +1,43 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&display=swap');
+
+.gestion {
+
+
+    
+   
+    height: 20vw;
+    padding: 4%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container{
+        background-color: aqua;
+        height: 20vw;
+    }
+   
+    
+  
+    & h2 {
+
+        margin-bottom: 5%;
+        font-size: 3rem;
+        font-family: 'Dorsa', sans-serif;
+    }
+
+        label,input {
+        
+        margin: 1%;
+        border-style: none;
+        font-size: 1rem;
+        font-family: "suisse","HelveticaNeue","Helvetica","Arial",sans-serif;
+      
+       
+        
+    }
+   
+       
+}
