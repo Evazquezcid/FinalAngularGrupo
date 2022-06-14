@@ -3,10 +3,13 @@ footer {
   background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
   font-size: 15px;
   margin-top: 2vh;
+ 
+  bottom: 0;
+  width: 100%;
 
   a {
     color: black;
-    font-size: 18px;
+    font-size: 0.8rem;
     margin-top: 1%;
     display: flex;
     flex-direction: column;
