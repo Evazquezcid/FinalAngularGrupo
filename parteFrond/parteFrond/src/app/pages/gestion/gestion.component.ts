@@ -11,10 +11,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class GestionComponent implements OnInit {
   public zapaForm!: FormGroup;
   public submmited : boolean = false;
+
   public newZapa = this.servicesService.zapasData;
   public zapaID = this.servicesService.zapasData.id;
 
-  
+
   constructor(private formBuilder: FormBuilder,private servicesService:ServicesService,private router:Router) { }
 
 
@@ -33,6 +34,7 @@ export class GestionComponent implements OnInit {
     this.newZapa = changes;
     });
 
+
   }
 
   public onSubmit() {
@@ -46,8 +48,10 @@ export class GestionComponent implements OnInit {
 
       this.zapaForm.reset();
       this.router.navigate(["/nike"]);
-    }
 
+      
+    }
+    
     public delete() {
     
       this.servicesService.deleteZapa(this.newZapa.id).subscribe();
@@ -55,9 +59,10 @@ export class GestionComponent implements OnInit {
       this.servicesService.clearZapa();
       alert("Zapa deleted");
       this.router.navigate(["/nike"]);
-    }
-  
 
+    }
+
+  
   }
 
   

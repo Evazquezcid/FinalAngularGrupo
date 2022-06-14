@@ -24,6 +24,8 @@ export class ServicesService {
     "imagen":""
     }
   }
+  
+
 
   public editItem (item:any) {
 
@@ -47,6 +49,32 @@ export class ServicesService {
   public deleteZapa (zapaID: any) {
     return this.HttpClient.delete("http://localhost:3000/Nike/" + zapaID )
   }
+
+
+  //adidas
+
+  //  public editItems (items:any) {
+
+  //   this.zapasData = items;
+
+  // }
+
+  public getAdidas () {
+    return this.HttpClient.get("http://localhost:3000/adidas")
+  }
+
+  // public postAdidas(newAdidas:any) {
+  //   return this.HttpClient.post("http://localhost:3000/adidas",newAdidas)
+
+  // }
+
+  // public putAdidas(adidasID:any,editedAdidas:any){
+  //   return this.HttpClient.put("http://localhost:3000/adidas/" + adidasID,editedAdidas)
+  // }
+
+  // public deleteAdidas (adidasID: any) {
+  //   return this.HttpClient.delete("http://localhost:3000/adidas/" + adidasID )
+  // }
 
 
 
