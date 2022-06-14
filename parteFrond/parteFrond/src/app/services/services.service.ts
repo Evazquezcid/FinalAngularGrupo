@@ -24,7 +24,26 @@ export class ServicesService {
     "imagen":""
     }
   }
-  
+
+  //adidas
+
+  public adidasData = {
+    "id":"",
+    "marca":"",
+    "modelo":"",
+    "precio":"",
+    "imagen":""
+  }
+
+  public clearAdidas (){
+    this.adidasData = {
+    "id":"",
+    "marca":"",
+    "modelo":"",
+    "precio":"",
+    "imagen":""
+    }
+  }
 
 
   public editItem (item:any) {
@@ -53,28 +72,28 @@ export class ServicesService {
 
   //adidas
 
-  //  public editItems (items:any) {
+   public editItems (items:any) {
 
-  //   this.zapasData = items;
+    this.adidasData = items;
 
-  // }
+  }
 
   public getAdidas () {
     return this.HttpClient.get("http://localhost:3000/adidas")
   }
 
-  // public postAdidas(newAdidas:any) {
-  //   return this.HttpClient.post("http://localhost:3000/adidas",newAdidas)
+  public postAdidas(newAdidas:any) {
+    return this.HttpClient.post("http://localhost:3000/adidas",newAdidas)
 
-  // }
+  }
 
-  // public putAdidas(adidasID:any,editedAdidas:any){
-  //   return this.HttpClient.put("http://localhost:3000/adidas/" + adidasID,editedAdidas)
-  // }
+  public putAdidas(adidasID:any,editedAdidas:any){
+    return this.HttpClient.put("http://localhost:3000/adidas/" + adidasID,editedAdidas)
+  }
 
-  // public deleteAdidas (adidasID: any) {
-  //   return this.HttpClient.delete("http://localhost:3000/adidas/" + adidasID )
-  // }
+  public deleteAdidas (adidasID: any) {
+    return this.HttpClient.delete("http://localhost:3000/adidas/" + adidasID )
+  }
 
 
 

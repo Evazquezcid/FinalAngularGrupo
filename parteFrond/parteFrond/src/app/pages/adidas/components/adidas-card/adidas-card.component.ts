@@ -14,9 +14,9 @@ export class AdidasCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // public editadida (adida: any) {
-  //   this.servicesService.editItems(adida);
-  //   this.router.navigate(["/gestion"])
-  // }
+  public editAdidas (adida: any) {
+    this.servicesService.editItems(adida);
+    this.router.navigate(["/gestion"])
+  }
 
 }
