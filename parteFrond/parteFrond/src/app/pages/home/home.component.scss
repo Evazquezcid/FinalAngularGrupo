@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&display=swap');
+
+
+.fotoprincipal{
+    
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+
+
+
+       & img {
+        width: 80%;
+        height:  100%;
+        padding-top: 3%;
+        
+        }
+
+        & h1 {
+
+        font-family: 'Dorsa', sans-serif;
+        font-size: 4rem;
+        text-align: center;
+        padding: 2%;
+        
+        }
+       
+    
+        & button{
+        font-size: 1.3rem;
+        border-style: none;
+        margin: 4%;
+        width: 100px;
+        background-color: rgb(3, 3, 3);
+        border: 2px solid  rgb(248, 248, 248);
+        color: aliceblue;
+        background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+        border-radius: 8px;
+        font-family: "suisse","HelveticaNeue","Helvetica","Arial",sans-serif;
+
+         &:hover{
+
+            background-color: aquamarine;
+         }
+
+
+
+        }
+
+
+
+        
+    }
+
+    
+    
+    .containerfotos{
+        margin-top: 14%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #ffffff;
+        background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+       
+        
+
+    }
+
+
+
+
+
