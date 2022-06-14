@@ -141,13 +141,6 @@
       "modelo": "Ozweego",
       "precio": "70 €",
       "imagen": "https://www.courir.es/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw76025a4a/images/hi-res/001497517_102.png?sw=600&sh=600&sm=fit"
-    },
-    {
-      "marca": "Adidas",
-      "modelo": "Ultraboost",
-      "imagen": "https://cdn.shopify.com/s/files/1/2358/2817/products/ultra-boost-40-game-of-thrones-house-stark-718323_1200x.png?v=1638814648",
-      "precio": "120",
-      "id": 18
     }
   ]
 }
