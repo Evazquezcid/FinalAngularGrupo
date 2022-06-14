@@ -1,18 +1,19 @@
 <section class="gestion">
-    <h2>Gestion</h2>
-    <form [formGroup]="zapaForm" (ngSubmit)="onSubmit()">
+  
+    <h2>Tu Stock de Sneakers</h2>
+    <form class="container" [formGroup]="zapaForm" (ngSubmit)="onSubmit()">
       <label for="marca">Marca</label>
-      <input type="text" id="marca" formControlName="marca" placeholder="marca" />
-      <label for="imagen">imagen</label>
-      <input type="text" id="imagen" formControlName="imagen" placeholder="foto" />
-      <label for="modelo">modelo</label>
+      <input type="text" id="marca" formControlName="marca" placeholder="adidas/nike" />
+      <label for="imagen">Imagen</label>
+      <input type="text" id="imagen" formControlName="imagen" placeholder="Agrega una Imagen" />
+      <label for="modelo">Modelo</label>
       <input
         type="text"
         id="modelo"
         formControlName="modelo"
         placeholder="modelo"
       />
-      <label for="precio">precio</label>
+      <label for="precio">Precio</label>
       <input
         type="text"
         id="precio"
@@ -22,6 +23,9 @@
       <button type="submit">Submit</button>
       <button (click)="delete()">Delete Zapa</button>
     </form>
+
+  </section>
+
 
 
 <!-- adidas -->
@@ -50,3 +54,4 @@
         <button type="submit">Submit</button>
         <button (click)="deleteAdidas()">Delete Zapa</button>
       </form>
+
