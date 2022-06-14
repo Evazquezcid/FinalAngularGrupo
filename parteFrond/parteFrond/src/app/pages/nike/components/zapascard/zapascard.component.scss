@@ -21,8 +21,9 @@
     
     .flip-card-front{
       h3 {
-        font-family: 'Syncopate', sans-serif;
+        font-family: 'Gaegu', cursive;
         padding: 10px;
+        
       }
     
       img {
@@ -42,17 +43,20 @@
     }
     .flip-card-back{
       background-color: #34a0a4;
-      background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+      background-image: url("https://www.transparenttextures.com/patterns/dust.png");
+      
       transform: rotateY(180deg);
+      font-family: 'Gaegu', cursive;
       h2 {
         background-color: black;
         color: white;
+        font-family: 'Gaegu', cursive;
       }
       p{
-        font-family: 'Syncopate', sans-serif;
+        font-family: 'Gaegu', cursive;
       }
       h3 {
-        font-family: 'Syncopate', sans-serif;
+        font-family: 'Gaegu', cursive;
         padding: 10px;
       }
       button {
@@ -66,10 +70,12 @@
         color: aliceblue;
         background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
         border-radius: 8px;
-        font-family: 'Syncopate', sans-serif;
+        font-family: 'Gaegu', cursive;
     
         &:hover {
           background-color: aquamarine;
+          font-family: 'Gaegu', cursive;
+          color: black;
         }
       }
 

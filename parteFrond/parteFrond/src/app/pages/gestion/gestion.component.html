@@ -4,7 +4,7 @@
     <h2>Tu Stock de Nike</h2>
     <form class="container" [formGroup]="zapaForm" (ngSubmit)="onSubmit()">
       <label for="marca">Marca</label>
-      <input type="text" id="marca" formControlName="marca" placeholder="adidas/nike" />
+      <input type="text" id="marca" formControlName="marca" placeholder="Marca" />
       <label for="imagen">Imagen</label>
       <input type="text" id="imagen" formControlName="imagen" placeholder="Agrega una Imagen" />
       <label for="modelo">Modelo</label>
@@ -12,14 +12,14 @@
         type="text"
         id="modelo"
         formControlName="modelo"
-        placeholder="modelo"
+        placeholder="Modelo"
       />
       <label for="precio">Precio</label>
       <input
         type="text"
         id="precio"
         formControlName="precio"
-        placeholder="precio"
+        placeholder="Precio"
       />
       <button type="submit">Submit</button>
       <button (click)="delete()">Delete Zapa</button>
@@ -32,24 +32,26 @@
       <form [formGroup]="adidasForm" (ngSubmit)="onSubmitAdidas()">
         <label for="marca">Marca</label>
         <input type="text" id="marca" formControlName="marca" placeholder="marca" />
-        <label for="imagen">imagen</label>
-        <input type="text" id="imagen" formControlName="imagen" placeholder="foto" />
-        <label for="modelo">modelo</label>
+        <label for="imagen">Imagen</label>
+        <input type="text" id="imagen" formControlName="imagen" placeholder="Agrega una imagen" />
+        <label for="modelo">Modelo</label>
         <input
           type="text"
           id="modelo"
           formControlName="modelo"
-          placeholder="modelo"
+          placeholder="Modelo"
         />
-        <label for="precio">precio</label>
+        <label for="precio">Precio</label>
         <input
           type="text"
           id="precio"
           formControlName="precio"
-          placeholder="precio"
+          placeholder="Precio"
         />
+        
         <button type="submit">Submit</button>
         <button (click)="deleteAdidas()">Delete Zapa</button>
+      
       </form>
       </section>
     </div>
