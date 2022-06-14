@@ -69,20 +69,7 @@
       "modelo": "Air Max Terrascape 90",
       "precio": "170 €",
       "imagen": "https://www.courir.es/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw486f3606/images/hi-res/001495775_104.png?sw=600&sh=600&sm=fit"
-    },
-    {
-      "marca": "Nike",
-      "modelo": "Pegasus",
-      "imagen": "https://tiendascampeon.es/25946-large_default/nike-zoom-pegasus-37-gs-cj2099.jpg",
-      "precio": "120",
-      "id": 11
-    },
-    {
-      "marca": "Nike",
-      "modelo": "Pegasus trail 2",
-      "imagen": "https://www.trailrun.es/uploads/s1/40/31/29/2/ck4305-700-e-prem-copia.png",
-      "precio": "120",
-      "id": 12
+
     }
   ],
   "Adidas": [
