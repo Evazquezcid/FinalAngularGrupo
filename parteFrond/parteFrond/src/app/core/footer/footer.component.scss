@@ -1,6 +1,7 @@
 footer {
   background-color: #34a0a4;
   background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
+
   margin-top: 5px;
   padding-bottom: 7px;
   position: fixed;
@@ -8,15 +9,14 @@ footer {
   width: 100%;
   
 
-
-  a {
-    color: black;
+  a { color: black;
     font-size: 14px;
     text-decoration: underline;
     margin-bottom: 1vh;
     display: flex;
     text-align: center;
     justify-content:space-around;
+    
     
   }
 

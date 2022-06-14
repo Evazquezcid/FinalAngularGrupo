@@ -1,16 +1,20 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Syncopate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Gaegu:wght@300&family=Give+You+Glory&family=Syncopate&display=swap');
 
 
 
 
 nav {
-   
+    @media (max-width: 600px) {
+       width: 100%;
+
+    }
     
    width: 100vw;
-   height: 15vw;
+   height: 10vw;
    background-color: #34a0a4;
-background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
+   background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
 
     
 
@@ -20,7 +24,7 @@ background-image: url("https://www.transparenttextures.com/patterns/white-paperb
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        font-family: 'Dorsa', sans-serif;
+        font-family: 'Gaegu', cursive;
         padding-top: 2%;
        
     }
@@ -31,18 +35,37 @@ background-image: url("https://www.transparenttextures.com/patterns/white-paperb
     }
 
     a {
+        @media (max-width: 600px) {
+            font-size: 1rem;
+     
+         }
         text-decoration: none;
         color: black;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 2.5rem;
         
     }
 
     .logo{
-        height: 15%;
-        width: 15%;
-        border: solid 1px black;
+        height: 100%;
+        width: 100%;
+      
     }
+
+    .lo{
+        @media (max-width: 600px) {
+            height: 40px;
+            width: 40px;
+     
+         }
+       
+        height: 150px;
+        width: 150px;
+        
+
+    }
+
+    
 
 
 
