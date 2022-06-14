@@ -23,4 +23,35 @@
       <button type="submit">Submit</button>
       <button (click)="delete()">Delete Zapa</button>
     </form>
+
   </section>
+
+
+
+<!-- adidas -->
+
+    <section class="gestionAdidas">
+      <h2>Gestion</h2>
+      <form [formGroup]="adidasForm" (ngSubmit)="onSubmitAdidas()">
+        <label for="marca">Marca</label>
+        <input type="text" id="marca" formControlName="marca" placeholder="marca" />
+        <label for="imagen">imagen</label>
+        <input type="text" id="imagen" formControlName="imagen" placeholder="foto" />
+        <label for="modelo">modelo</label>
+        <input
+          type="text"
+          id="modelo"
+          formControlName="modelo"
+          placeholder="modelo"
+        />
+        <label for="precio">precio</label>
+        <input
+          type="text"
+          id="precio"
+          formControlName="precio"
+          placeholder="precio"
+        />
+        <button type="submit">Submit</button>
+        <button (click)="deleteAdidas()">Delete Zapa</button>
+      </form>
+

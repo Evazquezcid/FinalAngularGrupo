@@ -1,7 +1,16 @@
-<figure class="zapascard">
-    <h2>{{zapa.marca}}</h2>
-    <h3>{{zapa.modelo}}</h3>
-    <img src="{{zapa.imagen}}" alt="{{zapa.modelo}}">
-    <p>{{zapa.precio}}</p>
-    <button (click)="editzapa(zapa)">Editar</button>
-</figure>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <h3>{{ zapa.modelo }}</h3>
+        <img src="{{ zapa.imagen }}" alt="{{ zapa.modelo }}" />
+      </div>
+      <div class="flip-card-back">
+        <h2>{{ zapa.marca }}</h2>
+        <h3>{{ zapa.modelo }}</h3>
+        <p>Precio: {{zapa.precio}}</p>
+        <button (click)="editzapa(zapa)">Editar</button>
+      </div>
+    </div>
+  </div>
+  
