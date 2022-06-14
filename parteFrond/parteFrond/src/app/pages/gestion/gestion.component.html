@@ -1,6 +1,7 @@
-<section class="gestion">
+ <div>
+  <section class="gestion">
   
-    <h2>Tu Stock de Sneakers</h2>
+    <h2>Tu Stock de Nike</h2>
     <form class="container" [formGroup]="zapaForm" (ngSubmit)="onSubmit()">
       <label for="marca">Marca</label>
       <input type="text" id="marca" formControlName="marca" placeholder="adidas/nike" />
@@ -26,12 +27,8 @@
 
   </section>
 
-
-
-<!-- adidas -->
-
     <section class="gestionAdidas">
-      <h2>Gestion</h2>
+      <h2>Tu Stock de Adidas</h2>
       <form [formGroup]="adidasForm" (ngSubmit)="onSubmitAdidas()">
         <label for="marca">Marca</label>
         <input type="text" id="marca" formControlName="marca" placeholder="marca" />
@@ -54,4 +51,5 @@
         <button type="submit">Submit</button>
         <button (click)="deleteAdidas()">Delete Zapa</button>
       </form>
-
+      </section>
+    </div>

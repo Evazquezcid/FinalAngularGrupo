@@ -1,43 +1,43 @@
+div{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 0fr; 
+        grid-template-rows: 2fr 0fr 0fr; 
+        gap: 0px 10px; 
+        grid-template-areas: 
+          ". . ."
+          ". . ."
+          ". . ."; 
+       padding: 20px;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&display=swap');
-
-.gestion {
-
-
-    
-   
-    height: 20vw;
-    padding: 4%;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .container{
-        background-color: aqua;
-        height: 20vw;
-    }
-   
-    
+        input[type=text], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */  /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+          }
+          
+          /* Style the submit button with a specific background color etc */
+          input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
   
-    & h2 {
-
-        margin-bottom: 5%;
-        font-size: 3rem;
-        font-family: 'Dorsa', sans-serif;
-    }
-
-        label,input {
+         
         
-        margin: 1%;
-        border-style: none;
-        font-size: 1rem;
-        font-family: "suisse","HelveticaNeue","Helvetica","Arial",sans-serif;
-      
-       
+    
+    
+
         
-    }
-   
-       
+        
+        
+    
+    
+
 }
