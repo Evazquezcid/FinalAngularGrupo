@@ -9,13 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NikeComponent implements OnInit {
   public zapas :ZapasInterface [] = [];
+  public zapasFiltradas!: any;
+
 
   constructor(private servicesService: ServicesService) { }
 
   ngOnInit(): void {
-    this.servicesService.getZapas().subscribe((data:any) =>{
-      this.zapas = data
-    })
+    this.servicesService.getZapas().subscribe((data: any) =>{
+      this.zapas = data;
+      this.zapasFiltradas= this.zapas;
+    });
+  }
+  public filtrarZapa = (valorInput: string) => {
+    this.zapasFiltradas = this.zapas.filter(zapa=> {
+      return zapa.modelo.toLowerCase().includes(valorInput.toLowerCase());
+    });
+    
   }
 
 }
