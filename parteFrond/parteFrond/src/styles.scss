@@ -23,7 +23,28 @@ a{
 
 }
 
-body{
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-}
+body {
+    --font-family: "Bilbo", cursive;
+    --text-color: seashell;
+    --background: #34a0a4;
+    --opacity: 50%;
+    --border-radius: 0px;
+    --background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  }
+  
+  body.light-theme {
+    --text-color: black;
+    --background: white;
+    --opacity: 100%;
+    --border-radius: 100px;
+    background-color: #00735c;
+    --background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  
+  }
+  
+  body {
+    background-color: var(--background);
+    background-image: var(--background-image);
+    color: var(--text-color);
+    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+  }
