@@ -5,7 +5,7 @@
 .fotoprincipal{
     
     width: 100vw;
-    height: 100vw;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,12 +14,13 @@
     background-color: #ffffff;
     background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
 
-
+       
 
        .foto {
-        width: 60%;
-        height:  80%;
+        width: 50%;
+        height:  60%;
         padding-top: 3%;
+        padding-bottom: 3%;
         
         }
 
@@ -28,13 +29,14 @@
         font-family: 'Dorsa', sans-serif;
         font-size: 4rem;
         text-align: center;
+        margin-top: 5%;
         padding: 2%;
         
         }
        
     
         & button{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         border-style: none;
         margin: 4%;
         width: 100px;
@@ -43,20 +45,27 @@
         color: aliceblue;
         background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
         border-radius: 8px;
-        font-family: "suisse","HelveticaNeue","Helvetica","Arial",sans-serif;
+        font-family: 'Gaegu', cursive;
 
          &:hover{
 
             background-color: aquamarine;
+            color: black;
          }
 
          & button{
             background-color: red;
          }
 
+         
+
 
 
         }
+       
+      .g {
+         height: 20vw;
+      }
 
 
 

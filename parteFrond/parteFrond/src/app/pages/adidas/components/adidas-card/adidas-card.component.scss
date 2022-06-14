@@ -6,6 +6,7 @@
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
+  font-family: 'Gaegu', cursive;
 
   .flip-card-inner{
     
@@ -15,10 +16,11 @@
       text-align: center;
       transition: transform 0.8s;
       transform-style: preserve-3d;
+      font-family: 'Gaegu', cursive;
     
     .flip-card-front{
       h3 {
-        font-family: "suisse", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+        font-family: 'Gaegu', cursive;
         padding: 10px;
       }
     
@@ -33,19 +35,24 @@
         object-fit: cover;
         &:hover {
           transform: scale(1.2);
+          font-family: 'Gaegu', cursive;
         }
       }
 
     }
     .flip-card-back{
       background-color: #34a0a4;
+      background-image: url("https://www.transparenttextures.com/patterns/dust.png");
       transform: rotateY(180deg);
+      font-family: 'Gaegu', cursive;
       h2 {
         background-color: black;
         color: white;
+        font-family: 'Gaegu', cursive;
+        font-weight: bold;
       }
       h3 {
-        font-family: "suisse", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+        font-family: 'Gaegu', cursive;
         padding: 10px;
       }
       button {
@@ -59,10 +66,11 @@
         color: aliceblue;
         background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
         border-radius: 8px;
-        font-family: "suisse", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+        font-family: 'Gaegu', cursive;
     
         &:hover {
           background-color: aquamarine;
+          color: black;
         }
       }
 
