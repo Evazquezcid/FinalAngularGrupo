@@ -11,9 +11,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class GestionComponent implements OnInit {
   public zapaForm!: FormGroup;
   public submmited : boolean = false;
-
   public newZapa = this.servicesService.zapasData;
   public zapaID = this.servicesService.zapasData.id;
+
+  //adidas
+  public adidasForm!:FormGroup;
+   public newAdidas = this.servicesService.adidasData;
+  public adidasID = this.servicesService.adidasData.id;
+
+  
 
 
   constructor(private formBuilder: FormBuilder,private servicesService:ServicesService,private router:Router) { }
@@ -33,6 +39,21 @@ export class GestionComponent implements OnInit {
     this.zapaForm.valueChanges.subscribe((changes)=>{
     this.newZapa = changes;
     });
+
+    //adidas
+
+    this.servicesService.clearAdidas();
+      this.adidasForm = this.formBuilder.group({
+        marca: [this.newAdidas.marca, [Validators.required, Validators.minLength(1)]],
+        modelo: [this.newAdidas.modelo, [Validators.required, Validators.minLength(1)]],
+        imagen: [this.newAdidas.imagen, [Validators.required]],
+        precio: [this.newAdidas.precio, [Validators.required, Validators.minLength(1)]]
+     
+      });
+  
+      this.adidasForm.valueChanges.subscribe((changess)=>{
+      this.newAdidas = changess;
+      });
 
 
   }
@@ -62,8 +83,42 @@ export class GestionComponent implements OnInit {
 
     }
 
+    //adidas
+    public onSubmitAdidas() {
+     
+      if (this.adidasID !== "") {
+       this.servicesService.putAdidas(this.adidasID, this.newAdidas).subscribe()
+        alert("adidas edited");
+      } else 
+        this.servicesService.postAdidas(this.newAdidas).subscribe();
+        alert("adidas created");
   
-  }
+        this.adidasForm.reset();
+        this.router.navigate(["/adidas"]);
+  
+        
+      }
+      
+      public deleteAdidas() {
+      
+        this.servicesService.deleteAdidas(this.newAdidas.id).subscribe();
+        
+        this.servicesService.clearAdidas();
+        alert("Zapa deleted");
+        this.router.navigate(["/adidas"]);
+  
+      }
+
+
+      
+  
+  
+    }
+  
+    
+
+  
+  
 
   
 
