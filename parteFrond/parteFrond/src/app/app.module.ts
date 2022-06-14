@@ -11,6 +11,7 @@ import { AdidasComponent } from './pages/adidas/adidas.component';
 import { GestionComponent } from './pages/gestion/gestion.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ZapascardComponent } from './pages/nike/components/zapascard/zapascard.component';
+import { AdidasCardComponent } from './pages/adidas/components/adidas-card/adidas-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ZapascardComponent } from './pages/nike/components/zapascard/zapascard.
     NikeComponent,
     AdidasComponent,
     GestionComponent,
-    ZapascardComponent
+    ZapascardComponent,
+    AdidasCardComponent
   ],
   imports: [
     BrowserModule,
