@@ -1,4 +1,8 @@
 div {
+  @media (max-width: 600px) {
+    padding-bottom: 39%;
+    
+  }
   display: grid;
   grid-template-columns: 1fr 1fr 0fr;
   grid-template-rows: 2fr 0fr 0fr;
@@ -9,6 +13,7 @@ div {
     ". . .";
   padding: 20px;
   font-family: "Gaegu", cursive;
+  padding-bottom: 11%;
 
   input[type="text"],
   select,
