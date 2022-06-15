@@ -1,10 +1,12 @@
 <h2>Adidas</h2>
+
 <p>
   Adidas fue fundada en Alemania en 1948 por Adolf Dassler, consiguiendo
   rápidamente hacerse un hueco en el mundo del deporte gracias a su afán de
   innovación. En la actualidad, la marca de las tres bandas es una de las firmas
   deportivas más influyentes del mundo.
 </p>
+
 <div class="buscador">
   <input type="text" #input (keyup)="filtrarAdida(input.value)"placeholder="Busca tu modelo"/>
 </div>
@@ -13,4 +15,6 @@
     <app-adidas-card
       *ngFor="let adida of adidasFiltradas" [adida]="adida"></app-adidas-card>
   </article>
+  
+ 
 </section>
