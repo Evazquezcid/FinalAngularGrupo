@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigator.component.scss']
 })
 export class NavigatorComponent implements OnInit {
-  public btnText: string = "🌞";
+  public btnText: string = "Dark";
   constructor() { }
 
   ngOnInit(): void {}
   
     public cambiarColor(): void {
       document.body.classList.toggle("light-theme");
-      this.btnText === "🌞" ? this.btnText = "🌚" : this.btnText = "🌞"}
+      this.btnText === "Dark" ? this.btnText = "Light" : this.btnText = "Dark"}
   
   
 
