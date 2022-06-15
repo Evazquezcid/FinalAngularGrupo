@@ -5,13 +5,14 @@
 footer {
 
   width: 100%;
-  background-color: #34a0a4;
+  background-color: #18bec7;
   background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
   position: relative;
+  
   
   font-family: 'Gaegu', cursive;
   
@@ -25,8 +26,10 @@ footer {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    background-color: #34a0a4;
+    background-color: #18bec7;
     background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
+    
+  
   }
 
   .redes {
@@ -36,12 +39,13 @@ footer {
     align-items: center;
     gap: 12px;
     width: 38vw;
-    background-color: #34a0a4;
+    background-color: #18bec7;
+   
     background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
     
 
     .logo {
-      width: 2vh;
+      width: 3vh;
       gap: 1%;
       display: flex;
       text-align: center;
@@ -53,13 +57,16 @@ footer {
   }
 
   p {
-    background-color: #34a0a4;
+    background-color: #18bec7;
+    
     display: flex;
     text-align: center;
     justify-content: center;
     font-size: 12px;
     background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
     margin-top: 5px;
+    color: var(--text-color);
+    color:black;
   }
 
   img{
@@ -72,10 +79,9 @@ footer {
       border-radius: 17px;
       padding-left: 10%;
       
-
-
-
-
+      -webkit-filter: var(--webkit);
+      filter:var(--por);
+   
   }
 
   

@@ -31,6 +31,7 @@
         text-align: center;
         margin-top: 5%;
         padding: 2%;
+        color: black;
         
         }
        
@@ -46,15 +47,16 @@
         background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
         border-radius: 8px;
         font-family: 'Gaegu', cursive;
+        
 
          &:hover{
 
-            background-color: aquamarine;
+            background-color: #18bec7;
             color: black;
          }
 
          & button{
-            background-color: red;
+            background-color: blue;
          }
 
          

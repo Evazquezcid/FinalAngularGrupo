@@ -11,10 +11,12 @@
 
 nav ul {
     list-style:none;
+    
   }
 
 li{
     list-style:none;
+   
 }
 
 a{
@@ -25,20 +27,21 @@ a{
 
 body {
     --font-family: "Bilbo", cursive;
-    --text-color: seashell;
-    --background: #34a0a4;
+    --text-color:black;
+    --background:white;
     --opacity: 50%;
     --border-radius: 0px;
     --background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
   }
   
   body.light-theme {
-    --text-color: black;
-    --background: white;
+    --text-color:white;
+    --background: black;
     --opacity: 100%;
-    --border-radius: 100px;
-    background-color: #00735c;
+    --border-radius: black;
     --background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    --webkit: invert(100%);
+    --por:invert(100%);
   
   }
   
@@ -48,3 +51,4 @@ body {
     color: var(--text-color);
     transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
   }
+  

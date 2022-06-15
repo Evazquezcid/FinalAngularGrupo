@@ -9,6 +9,9 @@
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
+  border: solid whitesmoke;
+  
+        
 
   .flip-card-inner{
     
@@ -23,6 +26,7 @@
       h3 {
         font-family: 'Gaegu', cursive;
         padding: 10px;
+       
         
       }
     
@@ -42,7 +46,7 @@
 
     }
     .flip-card-back{
-      background-color: #34a0a4;
+      background-color: #18bec7;
       background-image: url("https://www.transparenttextures.com/patterns/dust.png");
       
       transform: rotateY(180deg);
