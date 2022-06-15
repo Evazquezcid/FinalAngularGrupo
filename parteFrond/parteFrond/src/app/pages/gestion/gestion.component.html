@@ -1,12 +1,21 @@
- <div>
+<div>
   <section class="gestion">
-  
     <h2>Tu Stock de Nike</h2>
     <form class="container" [formGroup]="zapaForm" (ngSubmit)="onSubmit()">
       <label for="marca">Marca</label>
-      <input type="text" id="marca" formControlName="marca" placeholder="Marca" />
+      <input
+        type="text"
+        id="marca"
+        formControlName="marca"
+        placeholder="Marca"
+      />
       <label for="imagen">Imagen</label>
-      <input type="text" id="imagen" formControlName="imagen" placeholder="Agrega una Imagen" />
+      <input
+        type="text"
+        id="imagen"
+        formControlName="imagen"
+        placeholder="Agrega una Imagen"
+      />
       <label for="modelo">Modelo</label>
       <input
         type="text"
@@ -24,34 +33,42 @@
       <button type="submit">Submit</button>
       <button (click)="delete()">Delete Zapa</button>
     </form>
-
   </section>
 
-    <section class="gestionAdidas">
-      <h2>Tu Stock de Adidas</h2>
-      <form [formGroup]="adidasForm" (ngSubmit)="onSubmitAdidas()">
-        <label for="marca">Marca</label>
-        <input type="text" id="marca" formControlName="marca" placeholder="marca" />
-        <label for="imagen">Imagen</label>
-        <input type="text" id="imagen" formControlName="imagen" placeholder="Agrega una imagen" />
-        <label for="modelo">Modelo</label>
-        <input
-          type="text"
-          id="modelo"
-          formControlName="modelo"
-          placeholder="Modelo"
-        />
-        <label for="precio">Precio</label>
-        <input
-          type="text"
-          id="precio"
-          formControlName="precio"
-          placeholder="Precio"
-        />
-        
-        <button type="submit">Submit</button>
-        <button (click)="deleteAdidas()">Delete Zapa</button>
-      
-      </form>
-      </section>
-    </div>
+  <section class="gestionAdidas">
+    <h2>Tu Stock de Adidas</h2>
+    <form [formGroup]="adidasForm" (ngSubmit)="onSubmitAdidas()">
+      <label for="marca">Marca</label>
+      <input
+        type="text"
+        id="marca"
+        formControlName="marca"
+        placeholder="marca"
+      />
+      <label for="imagen">Imagen</label>
+      <input
+        type="text"
+        id="imagen"
+        formControlName="imagen"
+        placeholder="Agrega una imagen"
+      />
+      <label for="modelo">Modelo</label>
+      <input
+        type="text"
+        id="modelo"
+        formControlName="modelo"
+        placeholder="Modelo"
+      />
+      <label for="precio">Precio</label>
+      <input
+        type="text"
+        id="precio"
+        formControlName="precio"
+        placeholder="Precio"
+      />
+
+      <button type="submit">Submit</button>
+      <button (click)="deleteAdidas()">Delete Zapa</button>
+    </form>
+  </section>
+</div>

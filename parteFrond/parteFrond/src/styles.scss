@@ -1,54 +1,47 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Give+You+Glory&family=Syncopate&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Syncopate&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Gaegu:wght@300&family=Give+You+Glory&family=Syncopate&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Give+You+Glory&family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Syncopate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&family=Gaegu:wght@300&family=Give+You+Glory&family=Syncopate&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul {
-    list-style:none;
-    
-  }
-
-li{
-    list-style:none;
-   
+  list-style: none;
 }
 
-a{
-    color: none;
-    text-decoration: none;
+li {
+  list-style: none;
+}
 
+a {
+  color: none;
+  text-decoration: none;
 }
 
 body {
-    --font-family: "Bilbo", cursive;
-    --text-color:black;
-    --background:white;
-    --opacity: 50%;
-    --border-radius: 0px;
-    --background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-  }
-  
-  body.light-theme {
-    --text-color:white;
-    --background: black;
-    --opacity: 100%;
-    --border-radius: black;
-    --background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-    --webkit: invert(100%);
-    --por:invert(100%);
-  
-  }
-  
-  body {
-    background-color: var(--background);
-    background-image: var(--background-image);
-    color: var(--text-color);
-    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
-  }
-  
+  --font-family: "Bilbo", cursive;
+  --text-color: black;
+  --background: white;
+  --opacity: 50%;
+  --border-radius: 0px;
+  --background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+}
+
+body.light-theme {
+  --text-color: white;
+  --background: black;
+  --opacity: 100%;
+  --border-radius: black;
+  --background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  --webkit: invert(100%);
+  --por: invert(100%);
+}
+
+body {
+  background-color: var(--background);
+  background-image: var(--background-image);
+  color: var(--text-color);
+  transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}

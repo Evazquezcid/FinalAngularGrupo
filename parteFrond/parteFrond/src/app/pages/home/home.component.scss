@@ -1,84 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Dorsa&family=Expletus+Sans&display=swap');
+.fotoprincipal {
+  width: 100vw;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.fotoprincipal{
-    
-    width: 100vw;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
-    background-color: #ffffff;
+  background-color: var(--background);
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+
+  .foto {
+    width: 50%;
+    height: 60%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+
+  & h1 {
+    font-family: "Dorsa", sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 5%;
+    padding: 2%;
+    color: var(--text-color);
+  }
+
+  & button {
+    font-size: 1.2rem;
+    border-style: none;
+    margin: 4%;
+    width: 100px;
+    background-color: rgb(3, 3, 3);
+    border: 2px solid rgb(248, 248, 248);
+    color: aliceblue;
     background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+    border-radius: 8px;
+    font-family: "Gaegu", cursive;
 
-       
-
-       .foto {
-        width: 50%;
-        height:  60%;
-        padding-top: 3%;
-        padding-bottom: 3%;
-        
-        }
-
-        & h1 {
-
-        font-family: 'Dorsa', sans-serif;
-        font-size: 4rem;
-        text-align: center;
-        margin-top: 5%;
-        padding: 2%;
-        color: black;
-        
-        }
-       
-    
-        & button{
-        font-size: 1.2rem;
-        border-style: none;
-        margin: 4%;
-        width: 100px;
-        background-color: rgb(3, 3, 3);
-        border: 2px solid  rgb(248, 248, 248);
-        color: aliceblue;
-        background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
-        border-radius: 8px;
-        font-family: 'Gaegu', cursive;
-        
-
-         &:hover{
-
-            background-color: #18bec7;
-            color: black;
-         }
-
-         & button{
-            background-color: blue;
-         }
-
-         
-
-
-
-        }
-       
-      .g {
-         height: 20vw;
-      }
-
-
-
-        
+    &:hover {
+      background-color: #18bec7;
+      color: black;
     }
 
-    
-    
-    
+    & button {
+      background-color: blue;
+    }
+  }
 
-
-
-
-
+  .g {
+    height: 20vw;
+  }
+}
