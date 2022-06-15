@@ -8,7 +8,7 @@
   align-items: center;
 
   background-color: var(--background);
-  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  background-image: var(--background-image);
 
   .foto {
     width: 50%;
