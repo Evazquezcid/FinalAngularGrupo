@@ -17,11 +17,14 @@ nav {
   background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
 
   & ul {
+    @media (max-width: 600px) {
+      gap: 16px;
+    }
     display: flex;
     align-items: center;
     font-family: "Gaegu", cursive;
     padding-top:1%;
-    gap: 15px;
+    gap: 120px;
   }
 
   & li {
