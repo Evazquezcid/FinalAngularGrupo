@@ -17,8 +17,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: #18bec7;
+    --text-color:black;
+
     
-   background-color: var(--background);
    background-image: url("https://www.transparenttextures.com/patterns/white-paperboard.png");
 
     
@@ -31,6 +33,7 @@ nav {
         font-family: 'Gaegu', cursive;
         padding-top: 2%;
         gap: 20px;
+        
        
     }
 
@@ -48,6 +51,7 @@ nav {
         color: black;
         text-transform: uppercase;
         font-size: 2.5rem;
+        color: var(--text-color)
         
     }
 
